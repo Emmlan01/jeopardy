@@ -12,8 +12,8 @@ const questions: Record<string, Record<number, string>> = {
     500: 'Vilket hockeylag ligger närmast till hjärtat för Frida?',
   },
   Gustaf: {
-    100: '?',
-    200: 'hej',
+    100: 'Vilken månad fyllar Gustaf år?',
+    200: 'Vilken ytterligare roll utöver köksmästare, inköpsmästare och skattmästare hade Gustaf i klubbmästeriet?',
     300: 'Hur många sporter har Gustaf utfört/tränat? Ange antal',
     400: 'Hur många liter öl drack Gustaf under hela deras resa till oktoberfest?',
     500: 'Vilket smeknamn gillar Gustaf INTE att bli kallad för?',
