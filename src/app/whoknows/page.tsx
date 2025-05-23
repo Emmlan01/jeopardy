@@ -18,13 +18,14 @@ export default function WhoKnowsPage() {
 
   
   return (
-    <main className="min-h-screen bg-purple-200 px-6 py-12 flex flex-col items-center">
+    <main className="min-h-screen bg-violet-300 px-6 py-12 flex flex-col items-center">
       <h1 className="text-4xl font-bold text-indigo-900 mb-10">Vem känner bruden bäst? 👰</h1>
 
       <div className="overflow-x-auto w-full max-w-4xl">
-        <table className="min-w-full border border-indigo-400 rounded-lg bg-violet-500 text-white shadow-lg">
+        <table className="min-w-full max-w-2xl border border-violet-400 rounded-lg bg-violet-400 text-white text-sm shadow-md">
+
           <thead>
-            <tr className="bg-violet-700 text-white text-lg">
+            <tr className="bg-violet-500 text-white text-lg">
               <th className="py-4 px-6 border-b border-white">Nr</th>
               <th className="py-4 px-6 border-b border-white">Alternativ 1</th>
              <th className="py-4 px-6 border-b border-white"></th>
@@ -34,10 +35,10 @@ export default function WhoKnowsPage() {
           <tbody>
             {questions.map((q) => (
               <tr key={q.nr} className="text-center text-lg">
-                <td className="py-4 px-6 border-b border-white">{q.nr}</td>
-                <td className="py-4 px-6 border-b border-white">{q.alt1}</td>
-                <td className="py-4 px-6 border-b border-white">{q.e}</td>
-                <td className="py-4 px-6 border-b border-white">{q.alt2}</td>
+                <td className="py-4 px-4 border-b border-white">{q.nr}</td>
+                <td className="py-4 px-4 border-b border-white">{q.alt1}</td>
+                <td className="py-4 px-4 border-b border-white">{q.e}</td>
+                <td className="py-4 px-4 border-b border-white">{q.alt2}</td>
               </tr>
             ))}
           </tbody>
