@@ -21,8 +21,8 @@ export default function WhoKnowsPage() {
     <main className="min-h-screen bg-violet-300 px-6 py-12 flex flex-col items-center">
       <h1 className="text-4xl font-bold text-indigo-900 mb-10">Vem känner bruden bäst? 👰</h1>
 
-<div className="w-full max-w-screen-sm">
-            <table className="min-w-full max-w-2xl border border-violet-400 rounded-lg bg-violet-400 text-white text-sm shadow-md">
+      <div className="overflow-x-auto w-full max-w-4xl">
+        <table className="min-w-full max-w-2xl border border-violet-400 rounded-lg bg-violet-400 text-white text-sm shadow-md">
 
           <thead>
             <tr className="bg-violet-500 text-white text-lg">
