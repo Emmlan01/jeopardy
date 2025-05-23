@@ -7,23 +7,23 @@ const questions: Record<string, Record<number, string>> = {
   Frida: {
     100: 'Vad är Fridas favoritfärg?',
     200: 'När fyller Frida år?',
-    300: '?',
+    300: 'I vilken tätort kommer Frida ifrån?',
     400: 'Hur träffade Frida Gustafs syster Linnea första gången?',
-    500: '?',
+    500: 'Vilket hockeylag ligger närmast till hjärtat för Frida?',
   },
   Gustaf: {
     100: '?',
-    200: '?',
-    300: '?',
-    400: '?',
-    500: '?',
+    200: 'hej',
+    300: 'Hur många sporter har Gustaf utfört/tränat? Ange antal',
+    400: 'Hur många liter öl drack Gustaf under hela deras resa till oktoberfest?',
+    500: 'Vilket smeknamn gillar Gustaf INTE att bli kallad för?',
   },
   Paret: {
-    100: '',
+    100: 'Vad hette de två klubbmästerierna som Frida och Gustaf var med i?',
     200: 'Vart bodde Gustaf och Frida innan de köpte denna lägenhet?',
     300: 'Vart friade Gustaf till Frida?',
     400: 'Vad brukar Gustaf och Frida göra till frukost nästan varje helg?',
-    500: '',
+    500: 'Vad tycker Frida om Gustafs ölbryggning?',
   },
 };
 
