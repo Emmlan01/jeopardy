@@ -1,4 +1,4 @@
-export default function WhoKnowsPage() {
+export default function Vemvet() {
   const questions = [
     { nr: 1, alt1: 'Snubbla omkull under vigselcermonin', e: 'ELLER', alt2: 'Komma 30 min för sent till vigseln' },
     { nr: 2, alt1: 'Bröllop i skogen',  e: 'ELLER', alt2: 'Bröllop på en strand' },
@@ -16,33 +16,26 @@ export default function WhoKnowsPage() {
     { nr: 14, alt1: 'Din mamma blir för full och ska hålla långt, pinsamt tal',  e: 'ELLER', alt2: 'Din pappa...' },
   ];
 
-  
-  return (
-    <main className="min-h-screen bg-violet-300 px-6 py-12 flex flex-col items-center">
-      <h1 className="text-4xl font-bold text-indigo-900 mb-10">Vem känner bruden bäst? 👰</h1>
+return (
+    <main className="min-h-screen bg-violet-300 px-4 py-8 flex flex-col items-center">
+      <h1 className="text-2xl sm:text-4xl font-bold text-indigo-900 mb-8">
+        Vem känner bruden bäst? 👰
+      </h1>
 
-<div className="w-full max-w-screen-sm">
-            <table className="min-w-full max-w-2xl border border-violet-400 rounded-lg bg-violet-400 text-white text-sm shadow-md">
+      <div className="w-full max-w-md grid grid-cols-4 gap-2 text-sm sm:text-base text-white">
+        <div className="bg-violet-500 font-semibold text-center py-2">Nr</div>
+        <div className="bg-violet-500 font-semibold text-center py-2">Alternativ 1</div>
+          <div className="bg-violet-500 font-semibold text-center py-2"> </div>
+        <div className="bg-violet-500 font-semibold text-center py-2">Alternativ 2</div>
 
-          <thead>
-            <tr className="bg-violet-500 text-white text-lg">
-              <th className="py-4 px-6 border-b border-white">Nr</th>
-              <th className="py-4 px-6 border-b border-white">Alternativ 1</th>
-             <th className="py-4 px-6 border-b border-white"></th>
-              <th className="py-4 px-6 border-b border-white">Alternativ 2</th>
-            </tr>
-          </thead>
-          <tbody>
-            {questions.map((q) => (
-              <tr key={q.nr} className="text-center text-lg">
-                <td className="py-4 px-4 border-b border-white">{q.nr}</td>
-                <td className="py-4 px-4 border-b border-white">{q.alt1}</td>
-                <td className="py-4 px-4 border-b border-white">{q.e}</td>
-                <td className="py-4 px-4 border-b border-white">{q.alt2}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        {questions.map((q) => (
+          <>
+            <div key={`nr-${q.nr}`} className="bg-violet-400 text-center py-2">{q.nr}</div>
+            <div key={`alt1-${q.nr}`} className="bg-violet-400 text-center py-2">{q.alt1}</div>
+             <div key={`e-${q.nr}`} className="bg-violet-400 text-center py-2">{q.e}</div>
+            <div key={`alt2-${q.nr}`} className="bg-violet-400 text-center py-2">{q.alt2}</div>
+          </>
+        ))}
       </div>
     </main>
   );
